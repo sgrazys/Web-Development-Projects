@@ -1,0 +1,27 @@
+/* Write your code here: */
+
+/* Groupe selector (separated by a comma) */
+h1,
+h2 {
+	color: blueviolet;
+}
+
+/* Child selector (apply to DIRECT child of left side. .box esantys <p> - kurie yra tiesioginiai vaikai. Naudojam > zenkla) */
+.box > p {
+	color: firebrick;
+}
+
+/* Descendent selector apply to descendent of left side (VISI <li> esantys .box) atskiriame ' tarpu ' */
+.box li {
+	color: blue;
+}
+
+/* Chaining. Apply where ALL selectors are true (selectorselector, pasirenkam be tarpu) Apply styles to instances (egzemplioriams) where all selectors are true */
+li.done {
+	color: seagreen;
+}
+
+/* Combining Combiners (selector selectorselector) */
+ul p.done {
+	font-size: 0.5rem;
+}
