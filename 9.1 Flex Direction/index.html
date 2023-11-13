@@ -12,8 +12,9 @@
 			.container {
 				color: white;
 				border: 5px solid gold;
-				display: inline-flex;
-				flex-direction: column;
+				/* display: inline-flex; */
+				display: flex;
+				/* flex-direction: column; */
 			}
 
 			/*
@@ -21,13 +22,13 @@ Select all the elements that are the direct
 children of the .container class.
     */
 
-			/* .container > div{} */
 			.container > * {
 				flex-basis: 100px;
 			}
 
 			.red {
 				background-color: #eb4d4b;
+				/* align-self: flex-end; */
 			}
 			.orange {
 				background-color: #f0932b;
