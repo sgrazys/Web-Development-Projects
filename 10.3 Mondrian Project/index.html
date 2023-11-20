@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mondrian Project</title>
-  <style>
-    /* 
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Mondrian Project</title>
+		<style>
+			/* 
     Write your CSS here 
     Gap Colour: #000
     White: #F0F1EC
@@ -19,11 +18,89 @@
     HINT: Remember you can't change the properties of grid lines.
     But grid lines are transparent!
     */
-  </style>
-</head>
+			body {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			.picture {
+				height: 100vh;
 
-<body>
-  <!-- Write your HTML here -->
-</body>
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
 
+			.grid-container {
+				width: 748px;
+				height: 746px;
+				background-color: #000;
+
+				display: grid;
+				grid-template-columns: 320px 198px 153px 50px;
+				grid-template-rows: 414px 130px 155px 20px;
+				gap: 9px;
+			}
+
+			.red {
+				background-color: #e72f24;
+			}
+
+			.white {
+				background-color: #f0f1ec;
+			}
+
+			.blue {
+				background-color: #004592;
+			}
+			.yellow {
+				background-color: #f9d01e;
+				order: 1;
+			}
+			.black {
+				background-color: #232629;
+			}
+
+			.first {
+				grid-column: span 3;
+			}
+
+			.second,
+			.third {
+				grid-row: span 2;
+			}
+
+			.third {
+				grid-column: span 2;
+			}
+			.blue {
+				border-bottom: 12px solid #000;
+			}
+
+			.fourth {
+				grid-row: span 2;
+			}
+
+			.black {
+				order: 2;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!-- Write your HTML here -->
+		<div class="picture">
+			<div class="grid-container">
+				<div class="red"></div>
+				<div class="white first"></div>
+				<div class="white second"></div>
+				<div class="white third"></div>
+				<div class="blue"></div>
+				<div class="white fourth"></div>
+				<div class="yellow"></div>
+				<div class="black"></div>
+				<div class="white fith"></div>
+			</div>
+		</div>
+	</body>
 </html>
